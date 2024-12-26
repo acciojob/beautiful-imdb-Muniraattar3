@@ -1,2 +1,51 @@
 
 /* Your CSS Code here. */
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for the movie poster and description */
+.movie-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the movie poster */
+.moviePic {
+  width: 100%;
+  max-width: 500px;   /* Max width of the image */
+  height: auto;       /* Maintain the aspect ratio */
+  opacity: 0.9;       /* Slight opacity effect */
+  border-radius: 8px; /* Rounded corners for the image */
+  transition: opacity 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the movie poster */
+.moviePic:hover {
+  opacity: 1;         /* Make the image fully visible when hovered */
+}
+
+/* Styling for the movie description */
+.movieDetail {
+  position: relative;
+  top: 20px;
+  width: 80%;               /* Set the width of the description */
+  margin: 0 auto;           /* Center the description */
+  text-align: center;       /* Center the text */
+  font-size: 18px;          /* Set font size */
+  line-height: 1.6;         /* Line spacing for better readability */
+  color: #333;              /* Dark text color */
+}
